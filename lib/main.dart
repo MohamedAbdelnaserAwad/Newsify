@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsify/layout/cubit/cubit.dart';
 import 'package:newsify/layout/cubit/states.dart';
 import 'package:newsify/layout/news_layout.dart';
-import 'package:newsify/shared/bloc_observer.dart';
 import 'package:newsify/shared/network/local/cache_helper.dart';
 import 'package:newsify/shared/styles/themes.dart';
 
@@ -11,7 +10,6 @@ void main()async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  Bloc.observer = MyBlocObserver();
 
   await CacheHelper.init();
   bool isDark = CacheHelper.getData(key: 'isDark');
