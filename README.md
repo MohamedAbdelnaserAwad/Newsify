@@ -1,6 +1,6 @@
 # newsify
 
-A new Flutter project.
+this is a news app 
 
 ## Getting Started
 
